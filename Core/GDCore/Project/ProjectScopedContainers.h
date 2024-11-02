@@ -93,8 +93,9 @@ class ProjectScopedContainers {
   MakeNewProjectScopedContainersForFreeEventsFunction(
       const gd::Project &project,
       const gd::EventsFunctionsExtension &eventsFunctionsExtension,
-      const gd::EventsFunction& eventsFunction,
-      gd::ObjectsContainer& parameterObjectsContainer);
+      const gd::EventsFunction &eventsFunction,
+      gd::ObjectsContainer &parameterObjectsContainer,
+      gd::VariablesContainer &parameterVariablesContainer);
 
   static ProjectScopedContainers
   MakeNewProjectScopedContainersForBehaviorEventsFunction(
@@ -102,7 +103,9 @@ class ProjectScopedContainers {
       const gd::EventsFunctionsExtension &eventsFunctionsExtension,
       const gd::EventsBasedBehavior &eventsBasedBehavior,
       const gd::EventsFunction &eventsFunction,
-      gd::ObjectsContainer &parameterObjectsContainer);
+      gd::ObjectsContainer &parameterObjectsContainer,
+      gd::VariablesContainer &parameterVariablesContainer,
+      gd::VariablesContainer &propertyVariablesContainer);
 
   static ProjectScopedContainers
   MakeNewProjectScopedContainersForObjectEventsFunction(
@@ -110,7 +113,9 @@ class ProjectScopedContainers {
       const gd::EventsFunctionsExtension &eventsFunctionsExtension,
       const gd::EventsBasedObject &eventsBasedObject,
       const gd::EventsFunction &eventsFunction,
-      gd::ObjectsContainer &parameterObjectsContainer);
+      gd::ObjectsContainer &parameterObjectsContainer,
+      gd::VariablesContainer &parameterVariablesContainer,
+    gd::VariablesContainer &propertyVariablesContainer);
 
   static ProjectScopedContainers
   MakeNewProjectScopedContainersForEventsBasedObject(
