@@ -24,8 +24,8 @@ import Text from '../../../../UI/Text';
 import {
   getProjectLineHeight,
   transformCloudProjectsIntoFileMetadataWithStorageProviderName,
-} from '../BuildSection/utils';
-import ProjectFileListItem from '../BuildSection/ProjectFileListItem';
+} from '../CreateSection/utils';
+import ProjectFileListItem from '../CreateSection/ProjectFileListItem';
 import ContextMenu, {
   type ContextMenuInterface,
 } from '../../../../UI/Menu/ContextMenu';

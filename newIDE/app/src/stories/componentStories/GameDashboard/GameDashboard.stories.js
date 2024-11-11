@@ -325,7 +325,6 @@ export const Default = ({
       <MarketingPlansStoreStateProvider>
         <GameDashboard
           game={game}
-          analyticsSource="homepage"
           key={renderCount.toFixed(0)}
           currentView={tab}
           setCurrentView={setTab}

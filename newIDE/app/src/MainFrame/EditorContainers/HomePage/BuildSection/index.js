@@ -26,7 +26,7 @@ import SectionContainer, { SectionRow } from '../SectionContainer';
 import {
   checkIfHasTooManyCloudProjects,
   MaxProjectCountAlertMessage,
-} from './MaxProjectCountAlertMessage';
+} from '../CreateSection/MaxProjectCountAlertMessage';
 import { ExampleStoreContext } from '../../../../AssetStore/ExampleStore/ExampleStoreContext';
 import { SubscriptionSuggestionContext } from '../../../../Profile/Subscription/SubscriptionSuggestionContext';
 import { type ExampleShortHeader } from '../../../../Utils/GDevelopServices/Example';
@@ -41,7 +41,7 @@ import { type PrivateGameTemplateListingData } from '../../../../Utils/GDevelopS
 import { PrivateGameTemplateStoreContext } from '../../../../AssetStore/PrivateGameTemplates/PrivateGameTemplateStoreContext';
 import ChevronArrowRight from '../../../../UI/CustomSvgIcons/ChevronArrowRight';
 import Refresh from '../../../../UI/CustomSvgIcons/Refresh';
-import ProjectFileListItem from './ProjectFileListItem';
+import ProjectFileListItem from '../CreateSection/ProjectFileListItem';
 import { type MenuItemTemplate } from '../../../../UI/Menu/Menu.flow';
 import {
   getAllGameTemplatesAndExamplesFlaggedAsGameCount,
@@ -49,7 +49,7 @@ import {
   getLastModifiedInfoByProjectId,
   getProjectLineHeight,
   transformCloudProjectsIntoFileMetadataWithStorageProviderName,
-} from './utils';
+} from '../CreateSection/utils';
 import ErrorBoundary from '../../../../UI/ErrorBoundary';
 import InfoBar from '../../../../UI/Messages/InfoBar';
 import GridList from '@material-ui/core/GridList';
